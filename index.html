@@ -22,106 +22,53 @@
     </header>
 
     <div class="translator-container">
-      <div class="translate-area first">
-        <header class="languages-wrapper">
-          <button class="active">Detect Language</button>
-          <button>English</button>
-          <button>Ukranian</button>
-
-          <div class="languages-dropdown">
-            <button>
-              <i class="ph-caret-down-bold"></i>
-            </button>
-
-            <ul class="show">
-              <li>
-                <button class="active">Danish</button>
-              </li>
-              <li>
-                <button>Hmong</button>
-              </li>
-              <li>
-                <button class="select">Lithuanian</button>
-              </li>
-              <li>
-                <button>Romanian</button>
-              </li>
-              <li>
-                <button>Telugh</button>
-              </li>
-              <li>
-                <button>Telugh</button>
-              </li>
-              <li>
-                <button class="select">Telugh</button>
-              </li>
-            </ul>
-          </div>
-        </header>
+      <div id="first-translate-languages-area" class="translate-area first">
+        <div class="languages-wrapper first">
+          <select id="first-languages-select">
+            <option value="auto" selected>
+              Detect Language
+            </option>
+          </select>
+        </div>
 
         <div class="content">
-          <textarea id="textarea-from" placeholder="Something to say"></textarea>
-          <button>
+          <textarea id="first-textarea" placeholder="Something to say"></textarea>
+          <button id="clear-content-button">
             <i class="ph-x-bold"></i>
           </button>
         </div>
 
         <footer>
-          <button>
+          <button id="first-speech-button">
             <i class="ph-speaker-simple-high-fill"></i>
           </button>
 
-          <span>19/5000</span>
+          <span id="textarea-content-counter">0/5000</span>
         </footer>
       </div>
 
-      <div class="translate-area second">
-        <header class="languages-wrapper">
-          <button class="active">Georgian</button>
-          <button>English</button>
-          <button>Ukranian</button>
-
-          <div class="languages-dropdown">
-            <button>
-              <i class="ph-caret-down-bold"></i>
-            </button>
-
-            <ul>
-              <li>
-                <button class="active">Danish</button>
-              </li>
-              <li>
-                <button>Hmong</button>
-              </li>
-              <li>
-                <button class="select">Lithuanian</button>
-              </li>
-              <li>
-                <button>Romanian</button>
-              </li>
-              <li>
-                <button>Telugh</button>
-              </li>
-              <li>
-                <button>Telugh</button>
-              </li>
-              <li>
-                <button class="select">Telugh</button>
-              </li>
-            </ul>
-          </div>
-        </header>
+      <div id="second-translate-languages-area" class="translate-area second">
+        <div class="languages-wrapper second">
+          <select id="second-languages-select">
+            <option value="auto" selected>
+              Detect Language
+            </option>
+          </select>
+        </div>
 
         <div class="content">
-          <textarea id="textarea-from" placeholder="Something to say"></textarea>
+          <textarea 
+            id="second-textarea" 
+            placeholder="Something to say"
+          ></textarea>
         </div>
 
         <footer>
-          <button>
+          <button id="second-speech-button">
             <i class="ph-speaker-simple-high-fill"></i>
           </button>
 
-          <button>
+          <button id="copy-content-button">
             <i class="ph-copy-fill"></i>
           </button>
         </footer>
